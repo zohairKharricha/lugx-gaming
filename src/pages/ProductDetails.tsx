@@ -1,7 +1,22 @@
-interface IProps {}
+import DescRevCard from "../components/DescRevCard";
+import Footer from "../components/Footer";
+import ProdDetails from "../components/ProdDetails";
+import ProdsRelatedGames from "../components/ProdsRelatedGames";
 
-function ProductDetailsPage({}: IProps) {
-  return <div>ProductDetailsPage</div>;
+function ProductDetailsPage() {
+  return (
+    <>
+      <div className="container">
+        <ProdDetails />
+
+        <hr />
+
+        <DescRevCard />
+        <ProdsRelatedGames />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default ProductDetailsPage;

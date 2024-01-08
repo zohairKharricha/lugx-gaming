@@ -22,6 +22,9 @@
 .active {
   @apply md:rounded-full md:bg-white/10;
 }
+.active-btn {
+  @apply text-white bg-blue;
+}
 ul a:hover {
   @apply md:rounded-full md:bg-white/10;
 }

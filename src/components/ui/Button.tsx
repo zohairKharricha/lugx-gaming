@@ -16,7 +16,7 @@ function Button({
 }: IProps) {
   return (
     <button
-      className={`${className} ${transform} ${font}  bg-rose py-2 px-4 rounded-full group-hover:bg-blue hover:bg-blue duration-500 text-white`}
+      className={`${className} ${transform} ${font} flex items-center bg-rose py-2 px-4 rounded-full group-hover:bg-blue hover:bg-blue duration-500 text-white`}
       {...rest}
     >
       {children}

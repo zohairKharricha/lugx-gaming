@@ -4,7 +4,7 @@ import Button from "./ui/Button";
 function Landing() {
   return (
     <>
-      <div className="container text-center md:text-left text-white mt-32 md:mt-6 md:flex items-center justify-between">
+      <div className="text-center md:text-left text-white md:flex items-center justify-between">
         <div className="md:w-1/2">
           <h6 className="text-xl font-semibold uppercase">Welcome to lugx</h6>
           <h2 className="text-4xl  font-bold mt-6">BEST GAMING SITE EVER!</h2>

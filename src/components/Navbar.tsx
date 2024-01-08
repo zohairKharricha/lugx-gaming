@@ -17,10 +17,10 @@ function Navbar({children}: IProps) {
     setShowMenu(!showMenu);
   };
   return (
-    <div id="bg-banner" className=" w-full rounded-b-[150px] pb-56">
-      <header className="transparent relative py-4 rounded-b-3xl">
+    <div id="bg-banner" className=" w-full rounded-b-[150px] ">
+      <header className="transparent relative py-4 rounded-b-3xl ">
         {/* DESKTOP NAV */}
-        <nav className="hidden container md:flex items-center justify-between">
+        <nav className="md:text-[0.8rem] lg:text-base hidden container md:flex items-center justify-between">
           <img src="images/logo.png" alt="logo" />
           <ul className="flex flex-col md:flex-row  md:space-x-2 text-center text-white">
             <NavItem path="/">Home</NavItem>

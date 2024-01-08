@@ -1,38 +1,9 @@
+import {data} from "../data";
 import Button from "./ui/Button";
 
 function TopGames() {
-  const topGames = [
-    {
-      img: "/images/top-game-01.jpg",
-      category: "action",
-      title: "Warframe  ",
-    },
-    {
-      img: "/images/top-game-02.jpg",
-      category: "anime",
-      title: "Pubg",
-    },
-    {
-      img: "/images/top-game-03.jpg",
-      category: "action ",
-      title: "Apex",
-    },
-    {
-      img: "/images/top-game-04.jpg",
-      category: "survival ",
-      title: "Sims 4",
-    },
-    {
-      img: "/images/top-game-05.jpg",
-      category: "survival ",
-      title: "Lost Ark",
-    },
-    {
-      img: "/images/top-game-06.jpg",
-      category: "survival ",
-      title: "Destiny",
-    },
-  ];
+  const topGames = data.topGames;
+
   // ** render ** //
   const renderTopGames = topGames.map((item, idx) => (
     <div key={idx} className="group">
