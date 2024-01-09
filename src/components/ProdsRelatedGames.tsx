@@ -7,7 +7,7 @@ function ProdsRelatedGames() {
   const renderCategories = categories.map((item, idx) => (
     <div
       key={idx}
-      className="text-center rounded-[25px] text-white   overflow-hidden bg-blue"
+      className="text-center rounded-[25px] text-white overflow-hidden bg-blue"
     >
       <h2 className="text-xl font-bold  py-6">{item.category}</h2>
       <div className="rounded-[25px] overflow-hidden">

@@ -8,9 +8,7 @@ function ProductDetailsPage() {
     <>
       <div className="container">
         <ProdDetails />
-
         <hr />
-
         <DescRevCard />
         <ProdsRelatedGames />
       </div>
