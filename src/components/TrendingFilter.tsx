@@ -1,11 +1,14 @@
 import {useState} from "react";
 import FilterBtn from "./ui/FilterBtn";
 
-function TrendingFilter({filterCategory}) {
+interface IProps {
+  filterCategory: (category: string) => void;
+}
+
+function TrendingFilter({filterCategory}: IProps) {
   const [activeFilter, setActiveFilter] = useState("Show All");
 
   // ** handlers ** //
-
   const handleFilterClick: (filter: string) => void = (filter) => {
     setActiveFilter(filter);
   };
@@ -15,7 +18,7 @@ function TrendingFilter({filterCategory}) {
   };
 
   return (
-    <div className="container flex flex-wrap gap-4 justify-center">
+    <div className="container flex flex-wrap justify-center gap-4">
       <FilterBtn
         handleFilterClick={handleFilterClick}
         onFilter={onFilter}
